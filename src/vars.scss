@@ -1,26 +1,28 @@
 
 $text-font-family:       'Helvetica Neue', Helvetica, Arial, sans-serif;
 $headings-font-family:   'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$monospace-font-family:  Monaco, Menlo, Consolas, "Courier New", monospace
+$monospace-font-family:  Monaco, Menlo, Consolas, "Courier New", monospace;
 
 $font-size-base:         14px;
 
+$brand-primary:          #004A7D;
+
 $text-color:             #333;
+$inverted-text-color:    #F0F0F0;
 $body-bg:                #fff;
+
 $link-color:             #004A7D;  /* hsl(200, 100%, 40%) */
 $code-color:             #E46776;
 
+$night-mode-text-color:  #DDD;
+$night-mode-body-bg:     hsl(hue($brand-primary), lightness($brand-primary), 12.5%);  /* #212d3b */
 
-$inverted-text-color:    #fff;
-
-
-$brand-primary:          #004A7D;
 $brand-info:             #0cc6d5;
 $brand-success:          #0fd50c;
 $brand-warning:          #d56c0c;
 $brand-danger:           #d50f0c;
 
-
+/* Standard Gray Scales */
 $black:                  #000;
 $dark-gray:              #363636;
 $medium-dark-gray:       #6E6E6E; /* hsl(0, 0%, 43%) */
@@ -29,13 +31,13 @@ $medium-light-gray:      #CCC;
 $light-gray:             #F0F0F0;
 $white:                  #fff;
 
-$border-radius-base:     3px;
+$border-radius-base:     5px;
 $border-radius-large:    floor(($border-radius-base * 1.5));
 $border-radius-small:    ceil(($border-radius-base * 0.75));
 
-
 $state-primary-text:             hsl(hue($brand-primary), lightness($brand-primary), 30%);
 $state-primary-bg:               hsl(hue($brand-primary), lightness($brand-primary), 92%);
+$state-primary-bg-dark:          hsl(hue($brand-primary), lightness($brand-primary), 8%);
 $state-primary-border:           darken(adjust-hue($state-primary-bg, -10), 5%);
 
 $state-success-text:             hsl(hue($brand-success), lightness($brand-success), 30%);
