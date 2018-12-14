@@ -18,7 +18,7 @@ In particular, you'll want to consider the following variables:
 Sass it up:
 
 ```
-> sass src/index.scss > path/you/want/to/save/it/too/file.css
+> sass src/index.scss > path/you/want/to/save/it/to/file.css
 ```
 
 ## Step 4:

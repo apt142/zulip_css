@@ -5,7 +5,15 @@ $monospace-font-family:  Monaco, Menlo, Consolas, "Courier New", monospace;
 
 $font-size-base:         14px;
 
-$brand-primary:          #004A7D;
+$brand-primary:          #004A7D; /* #BADA55; */
+/* Primary Color Variants */
+$light-primary:          hsl(hue($brand-primary), lightness($brand-primary), 92%);
+$lightish-primary:       hsl(hue($brand-primary), lightness($brand-primary), 87.5%);
+$medium-light-primary:   hsl(hue($brand-primary), lightness($brand-primary), 65%);
+$medium-primary:         hsl(hue($brand-primary), lightness($brand-primary), 50%);
+$medium-dark-primary:    hsl(hue($brand-primary), lightness($brand-primary), 35%);
+$darkish-primary:        hsl(hue($brand-primary), lightness($brand-primary), 12.5%);
+$dark-primary:           hsl(hue($brand-primary), lightness($brand-primary), 8%);
 
 $text-color:             #333;
 $inverted-text-color:    #F0F0F0;
@@ -15,8 +23,9 @@ $link-color:             #004A7D;  /* hsl(200, 100%, 40%) */
 $code-color:             #E46776;
 
 $night-mode-text-color:  #DDD;
-$night-mode-body-bg:     hsl(hue($brand-primary), lightness($brand-primary), 12.5%);  /* #212d3b */
+$night-mode-body-bg:     $darkish-primary;  /* #212d3b */
 
+/* Standard info, success, warning, danger colors */
 $brand-info:             #0cc6d5;
 $brand-success:          #0fd50c;
 $brand-warning:          #d56c0c;
@@ -35,9 +44,9 @@ $border-radius-base:     5px;
 $border-radius-large:    floor(($border-radius-base * 1.5));
 $border-radius-small:    ceil(($border-radius-base * 0.75));
 
-$state-primary-text:             hsl(hue($brand-primary), lightness($brand-primary), 30%);
-$state-primary-bg:               hsl(hue($brand-primary), lightness($brand-primary), 92%);
-$state-primary-bg-dark:          hsl(hue($brand-primary), lightness($brand-primary), 8%);
+$state-primary-text:             $medium-dark-primary;
+$state-primary-bg:               $light-primary;
+$state-primary-bg-dark:          $dark-primary;
 $state-primary-border:           darken(adjust-hue($state-primary-bg, -10), 5%);
 
 $state-success-text:             hsl(hue($brand-success), lightness($brand-success), 30%);

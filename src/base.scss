@@ -646,7 +646,7 @@
         #group-pms li:hover, 
         #user_presences li.highlighted_user, 
         #user_presences li:hover {
-            background-color: $brand-primary;
+            background-color: $medium-light-primary;
         }    
     }
 
@@ -656,7 +656,12 @@
     #stream_filters li:hover, 
     #user_presences li.highlighted_user, 
     #user_presences li:hover {
-        background-color: $brand-primary;
+        background-color: $medium-light-primary;
+    }
+
+    li.active-filter, 
+    li.active-sub-filter {
+        background-color: $lightish-primary;
     }
 }
 
@@ -667,10 +672,10 @@
 
 .night-mode {
     .header {
-        #compose, 
         #settings_page .form-sidebar, 
         #settings_page .right, 
         #subscription_overlay .right, 
+        .column-middle, 
         .header-main,  {
             background-color: $night-mode-body-bg;
         }
@@ -686,9 +691,11 @@
         color: $night-mode-text-color;
         background-color: $night-mode-body-bg;
 
+        #compose, 
         .app-main, 
+        .column-middle,
         .column-left .left-sidebar, 
-        .column-middle, 
+        
         .column-right .right-sidebar, 
         .floating_recipient .message-header-wrapper {
             background-color: $night-mode-body-bg;
@@ -705,7 +712,7 @@
             #group-pms li:hover, 
             #user_presences li.highlighted_user, 
             #user_presences li:hover {
-                background-color: $brand-primary;
+                background-color: $medium-dark-primary;
             }    
         }
         .private-message .messagebox,
@@ -719,7 +726,12 @@
         #stream_filters li:hover, 
         #user_presences li.highlighted_user, 
         #user_presences li:hover {
-            background-color: $brand-primary;
+            background-color: $medium-dark-primary;
+        }
+
+        li.active-filter, 
+        li.active-sub-filter {
+            background-color: $darkish-primary;
         }
 
         .new-style .button:not(.save-status),
