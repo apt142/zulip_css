@@ -1,0 +1,55 @@
+
+$text-font-family:       'Helvetica Neue', Helvetica, Arial, sans-serif;
+$headings-font-family:   'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$monospace-font-family:  Monaco, Menlo, Consolas, "Courier New", monospace
+
+$font-size-base:         14px;
+
+$text-color:             #333;
+$body-bg:                #fff;
+$link-color:             #004A7D;  /* hsl(200, 100%, 40%) */
+$code-color:             #E46776;
+
+
+$inverted-text-color:    #fff;
+
+
+$brand-primary:          #004A7D;
+$brand-info:             #0cc6d5;
+$brand-success:          #0fd50c;
+$brand-warning:          #d56c0c;
+$brand-danger:           #d50f0c;
+
+
+$black:                  #000;
+$dark-gray:              #363636;
+$medium-dark-gray:       #6E6E6E; /* hsl(0, 0%, 43%) */
+$medium-gray:            #A3A3A3;
+$medium-light-gray:      #CCC;
+$light-gray:             #F0F0F0;
+$white:                  #fff;
+
+$border-radius-base:     3px;
+$border-radius-large:    floor(($border-radius-base * 1.5));
+$border-radius-small:    ceil(($border-radius-base * 0.75));
+
+
+$state-primary-text:             hsl(hue($brand-primary), lightness($brand-primary), 30%);
+$state-primary-bg:               hsl(hue($brand-primary), lightness($brand-primary), 92%);
+$state-primary-border:           darken(adjust-hue($state-primary-bg, -10), 5%);
+
+$state-success-text:             hsl(hue($brand-success), lightness($brand-success), 30%);
+$state-success-bg:               hsl(hue($brand-success), lightness($brand-success), 92%);
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%);
+
+$state-info-text:                hsl(hue($brand-info), lightness($brand-info), 30%);
+$state-info-bg:                  hsl(hue($brand-info), lightness($brand-info), 92%);
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%);
+
+$state-warning-text:             hsl(hue($brand-warning), lightness($brand-warning), 30%);
+$state-warning-bg:               hsl(hue($brand-warning), lightness($brand-warning), 92%);
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
+
+$state-danger-text:              hsl(hue($brand-danger), lightness($brand-danger), 30%);
+$state-danger-bg:                hsl(hue($brand-danger), lightness($brand-danger), 92%);
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
