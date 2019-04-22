@@ -95,6 +95,19 @@
         code {
             background-color: $body-bg;
         }
+
+        .message_inline_image {
+            height: auto;
+            max-height: 300px;
+            overflow: hidden;
+            margin-top: 15px;
+            margin-bottom: 20px;
+
+            img {
+                float: none;
+                border-radius: 2px;
+            }
+        }
     }
 
     .messagebox {

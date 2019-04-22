@@ -1,0 +1,604 @@
+/* Include them variables */
+/* #004A7D; #BADA55; */
+/* Primary Color Variants */
+/* hsl(200, 100%, 40%) */
+/* #212d3b */
+/* Standard info, success, warning, danger colors */
+/* Standard Gray Scales */
+/* hsl(0, 0%, 43%) */
+/* Include the style overwrites */
+.app {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Style inline code inside a link
+     to look more like a normal link */
+  /* The way this overrides the menus with a background-color and a high
+     z-index is kinda hacky, and requires some annoying color-matching,
+     but it works. */
+  /* Base color backgrounds for messageboxes,
+     private messages, mentions, and unread messages */
+  /* Brighten text because of the dark background */
+  /* embed */
+}
+.app input,
+.app button,
+.app select,
+.app textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: normal;
+}
+.app .border-radius {
+  border-radius: 5px;
+}
+.app .history-limited-box {
+  color: #ecd8cf;
+  border: 1px solid #ecd8cf;
+  box-shadow: 0 0 2px #ecd8cf;
+}
+.app .top-messages-logo svg circle {
+  fill: #363636;
+  stroke: #363636;
+}
+.app .top-messages-logo svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+.app #unmute_muted_topic_notification {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+  }
+}
+.app .header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.app #panels .alert {
+  color: #F0F0F0;
+}
+.app #panels .alert.alert-info {
+  background-color: #0cc6d5;
+}
+.app #panels .alert.alert-info.red {
+  background-color: #d50f0c;
+}
+.app #panels .alert .alert-link {
+  color: #2b696e;
+}
+.app #panels .alert.red .alert-link {
+  color: #6e2c2b;
+}
+.app .copy_message,
+.app .copy_message:focus {
+  background-color: #fff;
+}
+.app .copy_message:hover svg path {
+  fill: #000;
+}
+.app .header-main .logo {
+  color: #F0F0F0;
+}
+.app .message_header {
+  border-radius: 5px 5px 0 0;
+}
+.app .message_content {
+  padding: 0 0 2px 0;
+}
+.app .message_content code {
+  background-color: #fff;
+}
+.app .message_content .message_inline_image {
+  height: auto;
+  max-height: 300px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.app .message_content .message_inline_image img {
+  float: none;
+  border-radius: 2px;
+}
+.app .messagebox p:last-of-type {
+  margin-bottom: 7px;
+}
+.app .messagebox p {
+  margin: 0 10px 7px;
+  line-height: 1.5em;
+}
+.app pre::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.app pre::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.app pre::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.app a code {
+  color: #003254;
+  border-color: #003254;
+}
+.app a:hover code {
+  color: #000e17;
+  border-color: #000e17;
+}
+.app .sidebar-title {
+  color: #6E6E6E;
+}
+.app .tooltip .tooltip-inner {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.app #message_edit_tooltip {
+  color: #000;
+}
+.app td.pointer {
+  background-color: #fff;
+}
+.app .new_messages {
+  background-color: #e2f2f4;
+}
+.app .alert-msg {
+  color: #2b696e;
+  background-color: #fff;
+}
+.app .private-message .alert-msg {
+  background-color: white;
+}
+.app .message_data {
+  background-color: #fff;
+}
+.app .message_list .recipient_row {
+  border-bottom: 1px solid #f2f2f2;
+}
+.app .floating_recipient .recipient_row {
+  border-top: 1px solid #f2f2f2;
+}
+.app #left-sidebar {
+  padding: 0 3px;
+}
+.app .stream_label {
+  border-top-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  background-color: #f2f2f2;
+  border-left-color: #f2f2f2;
+}
+.app .stream_label::before {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) transparent;
+}
+.app .recipient_row_date {
+  color: #A3A3A3;
+}
+.app .summary_row.last_message .message_header {
+  box-shadow: inset 0px 2px 1px -2px #1d1d1d, inset -2px 0px 1px -2px #1d1d1d, inset 0px -2px 1px -2px #1d1d1d;
+}
+.app .summary_row_private_message .summary_colorblock {
+  background-color: #000;
+}
+.app .message_header_private_message .message_label_clickable {
+  border-left-color: #363636;
+}
+.app .private-message .messagebox,
+.app .message_header_private_message .message-header-contents {
+  background-color: #e2e2f3;
+  box-shadow: inset 1px 1px 0px #d9d9d9;
+}
+.app .message-header-contents {
+  background-color: #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+}
+.app .mention .messagebox {
+  background-color: #f4e2e2;
+}
+.app .unread-marker-fill {
+  background-color: #e2f4e2;
+  box-shadow: inset 0px -1px 0px 0px #fff;
+}
+.app .selected_message .messagebox-content {
+  background-color: #e2e2f3;
+  box-shadow: none;
+  /*
+      inset 0px 0px 0px 2px lighten($brand-primary, 10%),
+      -1px -1px 0px 0px lighten($brand-primary, 10%),
+      1px 1px 0px 0px lighten($brand-primary, 10%),
+      -1px 1px 0px 0px lighten($brand-primary, 10%),
+      1px -1px 0px 0px lighten($brand-primary, 10%);
+      */
+}
+.app .sender_name_hovered .sender_name,
+.app .sender_name_hovered .sender_name-in-status {
+  color: #004A7D;
+}
+.app .actions_hover:hover {
+  color: #004A7D;
+}
+.app .message_failed {
+  color: #d50f0c;
+}
+.app a.message_label_clickable:hover {
+  color: #004A7D;
+}
+.app .edit_content {
+  color: #CCC;
+}
+.app .edit_content:hover {
+  color: #004A7D;
+}
+.app .message_controls > .reaction_button {
+  color: #CCC;
+}
+.app .message_controls > .reaction_button:hover {
+  color: #004A7D;
+}
+.app .dark_background a,
+.app .dark_background a:hover,
+.app a.dark_background:hover,
+.app .dark_background {
+  color: #F0F0F0 !important;
+}
+.app .dark_background a.message_label_clickable:hover {
+  color: #0077ca;
+}
+.app .actions_hovered .message_time,
+.app .actions_hovered .info {
+  color: #004A7D;
+}
+.app .info {
+  color: #CCC;
+}
+.app .message_row {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.app .message_edit_countdown_timer {
+  color: #A3A3A3;
+}
+.app .message_edit_tooltip {
+  color: #A3A3A3;
+}
+.app .message_length_controller {
+  color: #004A7D;
+}
+.app div.message_content thead {
+  background-color: #F0F0F0;
+}
+.app div.message_content tr th {
+  border: 1px solid #CCC;
+}
+.app div.message_content tr td {
+  border: 1px solid #CCC;
+}
+.app .messagebox blockquote {
+  border-left-color: #CCC;
+}
+.app .messagebox .rtl blockquote {
+  border-right: 5px solid #CCC;
+}
+.app #tab_list li {
+  background-color: white;
+}
+.app #tab_list li.inactive {
+  background-color: #fafafa;
+}
+.app #tab_list li.private_message a {
+  color: #F0F0F0;
+}
+.app #tab_list li.active {
+  background-color: #f2f2f2;
+}
+.app #tab_list li.active.root {
+  padding: 0px 10px;
+}
+.app #tab_list li.private_message {
+  border-top-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  background-color: #363636;
+  border-left-color: #363636;
+  color: #F0F0F0;
+}
+.app #tab_list .root {
+  border-color: #f2f2f2;
+  background-color: #f2f2f2;
+}
+.app #tab_list li.root a {
+  color: #A3A3A3;
+}
+.app #tab_list .root a:hover {
+  color: #000;
+}
+.app #streamlist-toggle {
+  border-right: 2px solid #CCC;
+}
+.app #streamlist-toggle-button {
+  color: #A3A3A3;
+  background-color: #f2f2f2;
+}
+.app #streamlist-toggle-unreadcount,
+.app #userlist-toggle-unreadcount {
+  background-color: #f4e2e2;
+  /* hsl(0, 100%, 20%); */
+  border: 1px solid #F0F0F0;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  color: #F0F0F0;
+}
+.app .nav .dropdown-menu {
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.app .typeahead.dropdown-menu .active {
+  color: #F0F0F0;
+}
+.app .typeahead.dropdown-menu .active .unsubscribed_icon {
+  color: #CCC;
+}
+.app .nav .dropdown-menu::after {
+  border-bottom: 7px solid #A3A3A3;
+}
+.app nav .column-left .company-name {
+  color: #2b696e;
+}
+.app .modal-bg {
+  background-color: white;
+}
+.app #searchbox {
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+.app #searchbox .search_button,
+.app #searchbox .search_button[disabled]:hover {
+  color: #CCC;
+}
+.app #searchbox .search_button:hover {
+  color: #000;
+}
+.app #searchbox a.search_icon {
+  color: #CCC;
+}
+.app #searchbox a.search_icon:hover {
+  color: #000;
+}
+.app #searchbox_legacy #search_query {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.app #searchbox_legacy #search_query:focus {
+  box-shadow: inset 0px 0px 0px 2px #CCC;
+}
+.app #searchbox_legacy .search_button,
+.app #searchbox_legacy .search_button[disabled]:hover {
+  color: #CCC;
+}
+.app #searchbox_legacy .search_button:hover {
+  color: #000;
+}
+.app #searchbox_legacy a.search_icon {
+  color: #CCC;
+}
+.app #searchbox_legacy a.search_icon:hover {
+  color: #000;
+}
+.app .highlight {
+  background-color: #f4eae2;
+}
+.app .highlight_text_inserted {
+  color: #2c6e2b;
+  background-color: #e2f4e2;
+}
+.app .highlight_text_deleted {
+  color: #CCC;
+  background-color: #f4e2e2;
+}
+.app .youtube-video .fa-play::before {
+  background-color: #000;
+  color: #F0F0F0;
+  opacity: 0.7;
+}
+.app .tex-error {
+  color: #A3A3A3;
+}
+.app .operator_value {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  color: #E46776;
+}
+.app .operator {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.app .table-striped thead th {
+  background-color: #363636;
+  color: #F0F0F0;
+}
+.app button.primary {
+  background-color: #0000d0;
+  color: #F0F0F0;
+  border: none;
+  border-radius: 0px;
+}
+.app button.primary:hover {
+  background-color: #0404ff;
+}
+.app button.primary:focus {
+  outline: solid;
+}
+.app button.topic_edit_save,
+.app button.topic_edit_cancel {
+  border-radius: 5px;
+}
+.app #invite-user .modal-header {
+  border-color: #CCC;
+}
+.app #invite-user .modal-header .exit {
+  color: #A3A3A3;
+}
+.app .twitter-tweet {
+  border: 1px solid #CCC;
+}
+.app .star:not(.empty-star) {
+  color: #0fd50c;
+}
+.app .star:hover {
+  color: #0ca509;
+}
+.app .date_row .date-line {
+  border-top: 1px solid #f2f2f2;
+}
+.app .sub-unsub-message span::before,
+.app .sub-unsub-message span::after,
+.app .date_row span::before,
+.app .date_row span::after {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #fff;
+}
+.app #message_edit_form a.message-control-button {
+  color: #8a8a8a;
+}
+.app .user-group-mention,
+.app .user-mention {
+  background-color: #F0F0F0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 1px #CCC;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.app .user-mention-me {
+  background-color: #e2f4e2;
+}
+.app .alert-word {
+  background-color: #e2f4e2;
+}
+.app .screen {
+  background-color: #000;
+}
+.app .message_content .message_embed {
+  border-left: 3px solid #F0F0F0;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+.app .rtl.message_content .message_embed {
+  border-right: 3px solid #F0F0F0;
+}
+.app .message_embed .data-container::after {
+  background: linear-gradient(0deg, #fff, transparent 10%);
+}
+.app .email_copied,
+.app .user_popover_email i:hover {
+  color: #2b696e;
+}
+.app .email_tooltip {
+  border-radius: 7px;
+  background-color: #363636;
+  color: #F0F0F0;
+}
+.app .email_tooltip ::after {
+  border-bottom: #363636 solid 7px;
+}
+.app div.message_content button.tictactoe-square {
+  background-color: #0000d0;
+  color: #F0F0F0;
+}
+.app div.message_content button.tictactoe-square:hover {
+  background-color: #53537d;
+}
+.app div.message_content button.tictactoe-square:disabled {
+  background-color: #53537d;
+}
+.app #user-list #user_presences li {
+  border-radius: 5px;
+}
+.app #user-list #group-pms li:hover,
+.app #user-list #user_presences li.highlighted_user,
+.app #user-list #user_presences li:hover {
+  background-color: #8181ca;
+}
+.app #global_filters li:hover,
+.app #group-pms li:hover,
+.app #stream_filters li.highlighted_stream,
+.app #stream_filters li:hover,
+.app #user_presences li.highlighted_user,
+.app #user_presences li:hover {
+  background-color: #8181ca;
+}
+.app li.active-filter,
+.app li.active-sub-filter {
+  background-color: #d2d2ec;
+}
+
+.app-main,
+.header-main {
+  background-color: #fff;
+}
+
+.night-mode .header #settings_page .form-sidebar,
+.night-mode .header #settings_page .right,
+.night-mode .header #subscription_overlay .right,
+.night-mode .header .column-middle,
+.night-mode .header .header-main {
+  background-color: #13132d;
+}
+.night-mode .fixed-app #tab_bar_underpadding {
+  background-color: #13132d;
+}
+.night-mode .app {
+  color: #DDD;
+  background-color: #13132d;
+}
+.night-mode .app #compose,
+.night-mode .app .app-main,
+.night-mode .app .column-middle,
+.night-mode .app .column-left .left-sidebar,
+.night-mode .app .column-right .right-sidebar,
+.night-mode .app .floating_recipient .message-header-wrapper {
+  background-color: #13132d;
+}
+.night-mode .app .selected_message .messagebox-content {
+  background-color: #0c0c1d;
+}
+.night-mode .app #user-list #user_presences li {
+  border-radius: 5px;
+}
+.night-mode .app #user-list #group-pms li:hover,
+.night-mode .app #user-list #user_presences li.highlighted_user,
+.night-mode .app #user-list #user_presences li:hover {
+  background-color: #35357e;
+}
+.night-mode .app .private-message .messagebox,
+.night-mode .app .message_header_private_message .message-header-contents {
+  background-color: #0c0c1d;
+}
+.night-mode .app #global_filters li:hover,
+.night-mode .app #group-pms li:hover,
+.night-mode .app #stream_filters li.highlighted_stream,
+.night-mode .app #stream_filters li:hover,
+.night-mode .app #user_presences li.highlighted_user,
+.night-mode .app #user_presences li:hover {
+  background-color: #35357e;
+}
+.night-mode .app li.active-filter,
+.night-mode .app li.active-sub-filter {
+  background-color: #13132d;
+}
+.night-mode .app .new-style .button:not(.save-status),
+.night-mode .app .new-style .button[disabled=disabled]:hover,
+.night-mode .app .new-style .tab-switcher .ind-tab:not(.selected),
+.night-mode .app .pill-container,
+.night-mode .app input[type=date],
+.night-mode .app input[type=email],
+.night-mode .app input[type=number],
+.night-mode .app input[type=password],
+.night-mode .app input[type=text],
+.night-mode .app input[type=url],
+.night-mode .app select,
+.night-mode .app textarea {
+  border-color: #363636;
+}
