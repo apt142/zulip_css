@@ -1,5 +1,6 @@
 .app {
     font-family: $text-font-family;
+    background-color: $body-bg;
 
     input,
     button,
@@ -7,6 +8,21 @@
     textarea {
         font-family: $text-font-family;
         line-height: normal;
+    }
+
+    .app-main,
+    .header-main {
+        background-color: $body-bg;
+    }
+
+    #compose, 
+    .app-main, 
+    .column-middle,
+    .column-left .left-sidebar, 
+    
+    .column-right .right-sidebar, 
+    .floating_recipient .message-header-wrapper {
+        background-color: $body-bg;
     }
 
     .border-radius {
@@ -87,7 +103,8 @@
     }
 
     .message_header {
-        border-radius: $border-radius-base $border-radius-base 0 0; 
+        border-radius: $border-radius-base $border-radius-base 0 0;
+        background-color: darken($body-bg, 2%);
     }
 
     .message_content {
@@ -105,7 +122,9 @@
 
             img {
                 float: none;
-                border-radius: 2px;
+                border-radius: 4px;
+                border: solid 1px #ccc;
+                max-height: 300px;
             }
         }
     }
@@ -182,12 +201,14 @@
         background-color: $body-bg;
     }
 
-    .message_list .recipient_row {
-        border-bottom: 1px solid lighten($medium-light-gray, 15%);
-    }
-
+    .message_list .recipient_row,
     .floating_recipient .recipient_row {
-        border-top: 1px solid lighten($medium-light-gray, 15%);
+        border-radius: $border-radius-large;
+        margin-bottom: 1.5em;
+        border: none;
+        /* border-top: 1px solid lighten($medium-light-gray, 15%); */
+        /* background-color: darken($body-bg, 5%); */
+        
     }
 
     #left-sidebar {
@@ -229,8 +250,9 @@
        private messages, mentions, and unread messages */
     .private-message .messagebox,
     .message_header_private_message .message-header-contents {
-        background-color: $state-primary-bg;
-        box-shadow: inset 1px 1px 0px lighten($medium-light-gray, 5%);
+        /* background-color: $state-primary-bg;
+        box-shadow: inset 1px 1px 0px lighten($medium-light-gray, 5%);*/
+        background-color: darken($body-bg, 8%);
     }
 
 
@@ -249,7 +271,7 @@
     }
 
     .selected_message .messagebox-content {
-        background-color: $state-primary-bg;
+        /* background-color: $state-primary-bg; */
         box-shadow: none;
         /*
             inset 0px 0px 0px 2px lighten($brand-primary, 10%),
@@ -315,8 +337,12 @@
     }
 
     .message_row {
+        border-left: none;
+        border-right: none;
+        /* 
         border-left: 1px solid rgba($black, 0.1);
-        border-right: 1px solid rgba($black, 0.1);
+        border-right: 1px solid rgba($black, 0.1); 
+        */
     }
 
     .message_edit_countdown_timer {
@@ -678,11 +704,6 @@
     }
 }
 
-.app-main,
-.header-main {
-    background-color: $body-bg;
-}
-
 .night-mode {
     .header {
         #settings_page .form-sidebar, 
@@ -714,8 +735,18 @@
             background-color: $night-mode-body-bg;
         }
 
+        .message_list .recipient_row,
+        .floating_recipient .recipient_row {
+            border-radius: $border-radius-large;
+            margin-bottom: 1.5em;
+            border: none;
+            /* border-top: 1px solid lighten($medium-light-gray, 15%); */
+            /* background-color: lighten($night-mode-body-bg, 5%); */
+            /* background-color: lighten($state-primary-bg-dark, 5%); */
+        }
+
         .selected_message .messagebox-content {
-            background-color: $state-primary-bg-dark;
+            /* background-color: lighten($state-primary-bg-dark, 5%); */
         }
 
         #user-list {
@@ -730,7 +761,14 @@
         }
         .private-message .messagebox,
         .message_header_private_message .message-header-contents {
-            background-color: $state-primary-bg-dark;
+            /* background-color: $state-primary-bg-dark;
+            box-shadow: inset 1px 1px 0px $state-primary-bg-dark; */
+            background-color: darken($night-mode-body-bg, 8%);
+        }
+
+        .message_header {
+            border-radius: $border-radius-base $border-radius-base 0 0;
+            background-color: lighten($night-mode-body-bg, 2%);
         }
 
         #global_filters li:hover, 

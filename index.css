@@ -1,14 +1,16 @@
 /* Include them variables */
-/* #004A7D; #BADA55; */
+/* #0000d0; #004A7D; #BADA55; */
 /* Primary Color Variants */
+/* #fff; */
 /* hsl(200, 100%, 40%) */
-/* #212d3b */
+/* $darkish-primary;  #212d3b */
 /* Standard info, success, warning, danger colors */
 /* Standard Gray Scales */
 /* hsl(0, 0%, 43%) */
 /* Include the style overwrites */
 .app {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f0f0f0;
   /* Style inline code inside a link
      to look more like a normal link */
   /* The way this overrides the menus with a background-color and a high
@@ -26,6 +28,18 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: normal;
 }
+.app .app-main,
+.app .header-main {
+  background-color: #f0f0f0;
+}
+.app #compose,
+.app .app-main,
+.app .column-middle,
+.app .column-left .left-sidebar,
+.app .column-right .right-sidebar,
+.app .floating_recipient .message-header-wrapper {
+  background-color: #f0f0f0;
+}
 .app .border-radius {
   border-radius: 5px;
 }
@@ -39,11 +53,11 @@
   stroke: #363636;
 }
 .app .top-messages-logo svg path {
-  fill: #fff;
-  stroke: #fff;
+  fill: #f0f0f0;
+  stroke: #f0f0f0;
 }
 .app #unmute_muted_topic_notification {
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 7px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
 }
@@ -78,7 +92,7 @@
 }
 .app .copy_message,
 .app .copy_message:focus {
-  background-color: #fff;
+  background-color: #f0f0f0;
 }
 .app .copy_message:hover svg path {
   fill: #000;
@@ -88,12 +102,13 @@
 }
 .app .message_header {
   border-radius: 5px 5px 0 0;
+  background-color: #ebebeb;
 }
 .app .message_content {
   padding: 0 0 2px 0;
 }
 .app .message_content code {
-  background-color: #fff;
+  background-color: #f0f0f0;
 }
 .app .message_content .message_inline_image {
   height: auto;
@@ -104,7 +119,9 @@
 }
 .app .message_content .message_inline_image img {
   float: none;
-  border-radius: 2px;
+  border-radius: 4px;
+  border: solid 1px #ccc;
+  max-height: 300px;
 }
 .app .messagebox p:last-of-type {
   margin-bottom: 7px;
@@ -140,26 +157,28 @@
   color: #000;
 }
 .app td.pointer {
-  background-color: #fff;
+  background-color: #f0f0f0;
 }
 .app .new_messages {
   background-color: #e2f2f4;
 }
 .app .alert-msg {
   color: #2b696e;
-  background-color: #fff;
+  background-color: #f0f0f0;
 }
 .app .private-message .alert-msg {
   background-color: white;
 }
 .app .message_data {
-  background-color: #fff;
+  background-color: #f0f0f0;
 }
-.app .message_list .recipient_row {
-  border-bottom: 1px solid #f2f2f2;
-}
+.app .message_list .recipient_row,
 .app .floating_recipient .recipient_row {
-  border-top: 1px solid #f2f2f2;
+  border-radius: 7px;
+  margin-bottom: 1.5em;
+  border: none;
+  /* border-top: 1px solid lighten($medium-light-gray, 15%); */
+  /* background-color: darken($body-bg, 5%); */
 }
 .app #left-sidebar {
   padding: 0 3px;
@@ -188,8 +207,9 @@
 }
 .app .private-message .messagebox,
 .app .message_header_private_message .message-header-contents {
-  background-color: #e2e2f3;
-  box-shadow: inset 1px 1px 0px #d9d9d9;
+  /* background-color: $state-primary-bg;
+  box-shadow: inset 1px 1px 0px lighten($medium-light-gray, 5%);*/
+  background-color: gainsboro;
 }
 .app .message-header-contents {
   background-color: #d9d9d9;
@@ -200,10 +220,10 @@
 }
 .app .unread-marker-fill {
   background-color: #e2f4e2;
-  box-shadow: inset 0px -1px 0px 0px #fff;
+  box-shadow: inset 0px -1px 0px 0px #f0f0f0;
 }
 .app .selected_message .messagebox-content {
-  background-color: #e2e2f3;
+  /* background-color: $state-primary-bg; */
   box-shadow: none;
   /*
       inset 0px 0px 0px 2px lighten($brand-primary, 10%),
@@ -255,8 +275,12 @@
   color: #CCC;
 }
 .app .message_row {
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  /* 
+  border-left: 1px solid rgba($black, 0.1);
+  border-right: 1px solid rgba($black, 0.1); 
+  */
 }
 .app .message_edit_countdown_timer {
   color: #A3A3A3;
@@ -455,7 +479,7 @@
 .app .date_row span::before,
 .app .date_row span::after {
   border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #f0f0f0;
 }
 .app #message_edit_form a.message-control-button {
   color: #8a8a8a;
@@ -489,7 +513,7 @@
   border-right: 3px solid #F0F0F0;
 }
 .app .message_embed .data-container::after {
-  background: linear-gradient(0deg, #fff, transparent 10%);
+  background: linear-gradient(0deg, #f0f0f0, transparent 10%);
 }
 .app .email_copied,
 .app .user_popover_email i:hover {
@@ -534,24 +558,19 @@
   background-color: #d2d2ec;
 }
 
-.app-main,
-.header-main {
-  background-color: #fff;
-}
-
 .night-mode .header #settings_page .form-sidebar,
 .night-mode .header #settings_page .right,
 .night-mode .header #subscription_overlay .right,
 .night-mode .header .column-middle,
 .night-mode .header .header-main {
-  background-color: #13132d;
+  background-color: #333;
 }
 .night-mode .fixed-app #tab_bar_underpadding {
-  background-color: #13132d;
+  background-color: #333;
 }
 .night-mode .app {
-  color: #DDD;
-  background-color: #13132d;
+  color: #BBB;
+  background-color: #333;
 }
 .night-mode .app #compose,
 .night-mode .app .app-main,
@@ -559,10 +578,19 @@
 .night-mode .app .column-left .left-sidebar,
 .night-mode .app .column-right .right-sidebar,
 .night-mode .app .floating_recipient .message-header-wrapper {
-  background-color: #13132d;
+  background-color: #333;
+}
+.night-mode .app .message_list .recipient_row,
+.night-mode .app .floating_recipient .recipient_row {
+  border-radius: 7px;
+  margin-bottom: 1.5em;
+  border: none;
+  /* border-top: 1px solid lighten($medium-light-gray, 15%); */
+  /* background-color: lighten($night-mode-body-bg, 5%); */
+  /* background-color: lighten($state-primary-bg-dark, 5%); */
 }
 .night-mode .app .selected_message .messagebox-content {
-  background-color: #0c0c1d;
+  /* background-color: lighten($state-primary-bg-dark, 5%); */
 }
 .night-mode .app #user-list #user_presences li {
   border-radius: 5px;
@@ -574,7 +602,13 @@
 }
 .night-mode .app .private-message .messagebox,
 .night-mode .app .message_header_private_message .message-header-contents {
-  background-color: #0c0c1d;
+  /* background-color: $state-primary-bg-dark;
+  box-shadow: inset 1px 1px 0px $state-primary-bg-dark; */
+  background-color: #1f1f1f;
+}
+.night-mode .app .message_header {
+  border-radius: 5px 5px 0 0;
+  background-color: #383838;
 }
 .night-mode .app #global_filters li:hover,
 .night-mode .app #group-pms li:hover,
