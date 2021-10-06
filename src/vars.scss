@@ -5,7 +5,7 @@ $monospace-font-family:  Monaco, Menlo, Consolas, "Courier New", monospace;
 
 $font-size-base:         14px;
 
-$brand-primary:          #0000d0; /* #0000d0; #004A7D; #BADA55; */
+$brand-primary:          #0000d0;
 /* Primary Color Variants */
 $light-primary:          hsl(hue($brand-primary), lightness($brand-primary), 92%);
 $lightish-primary:       hsl(hue($brand-primary), lightness($brand-primary), 87.5%);
@@ -17,13 +17,13 @@ $dark-primary:           hsl(hue($brand-primary), lightness($brand-primary), 8%)
 
 $text-color:             #222;
 $inverted-text-color:    #F0F0F0;
-$body-bg:                #f0f0f0; /* #fff; */
+$body-bg:                #f0f0f0;
 
-$link-color:             #004A7D;  /* hsl(200, 100%, 40%) */
+$link-color:             #004A7D;
 $code-color:             #E46776;
 
 $night-mode-text-color:  #BBB;
-$night-mode-body-bg:     #333; /* $darkish-primary;  #212d3b */
+$night-mode-body-bg:     #333;
 
 /* Standard info, success, warning, danger colors */
 $brand-info:             #0cc6d5;
@@ -34,7 +34,7 @@ $brand-danger:           #d50f0c;
 /* Standard Gray Scales */
 $black:                  #000;
 $dark-gray:              #363636;
-$medium-dark-gray:       #6E6E6E; /* hsl(0, 0%, 43%) */
+$medium-dark-gray:       #6E6E6E;
 $medium-gray:            #A3A3A3;
 $medium-light-gray:      #CCC;
 $light-gray:             #F0F0F0;

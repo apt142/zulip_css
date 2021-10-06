@@ -10,9 +10,21 @@
         line-height: normal;
     }
 
+    .header {
+        background-color: none;
+    }
+
     .app-main,
     .header-main {
         background-color: $body-bg;
+    }
+
+    .column-middle {
+        padding: 10px;
+
+        .column-overlay .recipient-bar-main {
+            padding: 10px;
+        }
     }
 
     #compose, 
@@ -24,6 +36,7 @@
     .floating_recipient .message-header-wrapper {
         background-color: $body-bg;
     }
+
 
     .border-radius {
         border-radius: $border-radius-base
@@ -67,6 +80,7 @@
 
     .header {
         border-bottom: 1px solid rgba($black, 0.2);
+        background-color: none;
     }
 
     #panels .alert {
@@ -689,6 +703,10 @@
         }    
     }
 
+    #global_filters, #stream_filters {
+        margin-right: 0;
+    }
+
     #global_filters li:hover, 
     #group-pms li:hover, 
     #stream_filters li.highlighted_stream, 
@@ -798,6 +816,13 @@
         select, 
         textarea {
             border-color: $dark-gray    
+        }
+
+        .rendered_markdown code,
+        .rendered_markdown .codehilite code,
+        .rendered_markdown .codehilite pre {
+            color: $light-gray;
+            background-color: $black;
         }
 
     }

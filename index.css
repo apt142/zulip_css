@@ -28,9 +28,18 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: normal;
 }
+.app .header {
+  background-color: none;
+}
 .app .app-main,
 .app .header-main {
   background-color: #f0f0f0;
+}
+.app .column-middle {
+  padding: 10px;
+}
+.app .column-middle .column-overlay .recipient-bar-main {
+  padding: 10px;
 }
 .app #compose,
 .app .app-main,
@@ -74,6 +83,7 @@
 }
 .app .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: none;
 }
 .app #panels .alert {
   color: #F0F0F0;
@@ -545,6 +555,9 @@
 .app #user-list #user_presences li:hover {
   background-color: #8181ca;
 }
+.app #global_filters, .app #stream_filters {
+  margin-right: 0;
+}
 .app #global_filters li:hover,
 .app #group-pms li:hover,
 .app #stream_filters li.highlighted_stream,
@@ -636,3 +649,11 @@
 .night-mode .app textarea {
   border-color: #363636;
 }
+.night-mode .app .rendered_markdown code,
+.night-mode .app .rendered_markdown .codehilite code,
+.night-mode .app .rendered_markdown .codehilite pre {
+  color: #F0F0F0;
+  background-color: #000;
+}
+
+/*# sourceMappingURL=index.css.map */
