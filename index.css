@@ -1,12 +1,7 @@
 /* Include them variables */
-/* #0000d0; #004A7D; #BADA55; */
 /* Primary Color Variants */
-/* #fff; */
-/* hsl(200, 100%, 40%) */
-/* $darkish-primary;  #212d3b */
 /* Standard info, success, warning, danger colors */
 /* Standard Gray Scales */
-/* hsl(0, 0%, 43%) */
 /* Include the style overwrites */
 .app {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -571,30 +566,30 @@
   background-color: #d2d2ec;
 }
 
-.night-mode .header #settings_page .form-sidebar,
-.night-mode .header #settings_page .right,
-.night-mode .header #subscription_overlay .right,
-.night-mode .header .column-middle,
-.night-mode .header .header-main {
+.dark-theme .header #settings_page .form-sidebar,
+.dark-theme .header #settings_page .right,
+.dark-theme .header #subscription_overlay .right,
+.dark-theme .header .column-middle,
+.dark-theme .header .header-main {
   background-color: #333;
 }
-.night-mode .fixed-app #tab_bar_underpadding {
+.dark-theme .fixed-app #tab_bar_underpadding {
   background-color: #333;
 }
-.night-mode .app {
+.dark-theme .app {
   color: #BBB;
   background-color: #333;
 }
-.night-mode .app #compose,
-.night-mode .app .app-main,
-.night-mode .app .column-middle,
-.night-mode .app .column-left .left-sidebar,
-.night-mode .app .column-right .right-sidebar,
-.night-mode .app .floating_recipient .message-header-wrapper {
+.dark-theme .app #compose,
+.dark-theme .app .app-main,
+.dark-theme .app .column-middle,
+.dark-theme .app .column-left .left-sidebar,
+.dark-theme .app .column-right .right-sidebar,
+.dark-theme .app .floating_recipient .message-header-wrapper {
   background-color: #333;
 }
-.night-mode .app .message_list .recipient_row,
-.night-mode .app .floating_recipient .recipient_row {
+.dark-theme .app .message_list .recipient_row,
+.dark-theme .app .floating_recipient .recipient_row {
   border-radius: 7px;
   margin-bottom: 1.5em;
   border: none;
@@ -602,58 +597,56 @@
   /* background-color: lighten($night-mode-body-bg, 5%); */
   /* background-color: lighten($state-primary-bg-dark, 5%); */
 }
-.night-mode .app .selected_message .messagebox-content {
+.dark-theme .app .selected_message .messagebox-content {
   /* background-color: lighten($state-primary-bg-dark, 5%); */
 }
-.night-mode .app #user-list #user_presences li {
+.dark-theme .app #user-list #user_presences li {
   border-radius: 5px;
 }
-.night-mode .app #user-list #group-pms li:hover,
-.night-mode .app #user-list #user_presences li.highlighted_user,
-.night-mode .app #user-list #user_presences li:hover {
+.dark-theme .app #user-list #group-pms li:hover,
+.dark-theme .app #user-list #user_presences li.highlighted_user,
+.dark-theme .app #user-list #user_presences li:hover {
   background-color: #35357e;
 }
-.night-mode .app .private-message .messagebox,
-.night-mode .app .message_header_private_message .message-header-contents {
+.dark-theme .app .private-message .messagebox,
+.dark-theme .app .message_header_private_message .message-header-contents {
   /* background-color: $state-primary-bg-dark;
   box-shadow: inset 1px 1px 0px $state-primary-bg-dark; */
   background-color: #1f1f1f;
 }
-.night-mode .app .message_header {
+.dark-theme .app .message_header {
   border-radius: 5px 5px 0 0;
   background-color: #383838;
 }
-.night-mode .app #global_filters li:hover,
-.night-mode .app #group-pms li:hover,
-.night-mode .app #stream_filters li.highlighted_stream,
-.night-mode .app #stream_filters li:hover,
-.night-mode .app #user_presences li.highlighted_user,
-.night-mode .app #user_presences li:hover {
+.dark-theme .app #global_filters li:hover,
+.dark-theme .app #group-pms li:hover,
+.dark-theme .app #stream_filters li.highlighted_stream,
+.dark-theme .app #stream_filters li:hover,
+.dark-theme .app #user_presences li.highlighted_user,
+.dark-theme .app #user_presences li:hover {
   background-color: #35357e;
 }
-.night-mode .app li.active-filter,
-.night-mode .app li.active-sub-filter {
+.dark-theme .app li.active-filter,
+.dark-theme .app li.active-sub-filter {
   background-color: #13132d;
 }
-.night-mode .app .new-style .button:not(.save-status),
-.night-mode .app .new-style .button[disabled=disabled]:hover,
-.night-mode .app .new-style .tab-switcher .ind-tab:not(.selected),
-.night-mode .app .pill-container,
-.night-mode .app input[type=date],
-.night-mode .app input[type=email],
-.night-mode .app input[type=number],
-.night-mode .app input[type=password],
-.night-mode .app input[type=text],
-.night-mode .app input[type=url],
-.night-mode .app select,
-.night-mode .app textarea {
+.dark-theme .app .new-style .button:not(.save-status),
+.dark-theme .app .new-style .button[disabled=disabled]:hover,
+.dark-theme .app .new-style .tab-switcher .ind-tab:not(.selected),
+.dark-theme .app .pill-container,
+.dark-theme .app input[type=date],
+.dark-theme .app input[type=email],
+.dark-theme .app input[type=number],
+.dark-theme .app input[type=password],
+.dark-theme .app input[type=text],
+.dark-theme .app input[type=url],
+.dark-theme .app select,
+.dark-theme .app textarea {
   border-color: #363636;
 }
-.night-mode .app .rendered_markdown code,
-.night-mode .app .rendered_markdown .codehilite code,
-.night-mode .app .rendered_markdown .codehilite pre {
+.dark-theme .app .rendered_markdown code,
+.dark-theme .app .rendered_markdown .codehilite code,
+.dark-theme .app .rendered_markdown .codehilite pre {
   color: #F0F0F0;
   background-color: #000;
 }
-
-/*# sourceMappingURL=index.css.map */
